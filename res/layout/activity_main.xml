@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/snare_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/snare"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:text="Drummer quiz"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFF" />
+
+
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="#1) What basic rudiment is this?"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/paradiddle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paradiddle" />
+            
+            <RadioGroup
+                android:id="@+id/q1_radio_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp">
+
+                <RadioButton
+                    android:id="@+id/q1_a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="swiss army triplet"/>
+
+                <RadioButton
+                    android:id="@+id/q1_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="double paradiddle"/>
+
+                <RadioButton
+                    android:id="@+id/q1_a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="paradiddle"/>
+
+                <RadioButton
+                    android:id="@+id/q1_a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="flam"/>
+
+            </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFF" />
+
+                <TextView
+                    android:id="@+id/q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="#2) What basic rudiment is this?"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/swiss_army_triplet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/swiss_army_triplet" />
+
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:textColor="#000000">
+
+                <RadioButton
+                    android:id="@+id/q2_a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="swiss army triplets"/>
+
+                <RadioButton
+                    android:id="@+id/q2_a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="double paradiddle"/>
+
+                <RadioButton
+                    android:id="@+id/q2_a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="paradiddle"/>
+
+                <RadioButton
+                    android:id="@+id/q2_a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="flam"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFF" />
+
+                <TextView
+                    android:id="@+id/q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="#3) What note patterns are seen?"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/patterns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/patterns" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/rest_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="rest notes" />
+
+                    <CheckBox
+                        android:id="@+id/eigth_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="eighth notes" />
+
+                    <CheckBox
+                        android:id="@+id/sixteenth_notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sixteenth notes" />
+
+                    <CheckBox
+                        android:id="@+id/triplets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="triplets" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFF" />
+                <TextView
+                    android:id="@+id/q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="#4) What do drummers use for practice on bpm's(beats per minute) ?"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/q4_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="(hint)m*******e"
+                    android:textColor="#000000"
+                    />
+
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#000000"
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:textColor="#FFFF"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
